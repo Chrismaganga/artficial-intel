@@ -7,16 +7,16 @@ const LandingPage = (props: Props) => {
   return (
     <>
       <div>
-        <h1 className="text-3xl">Landing page(Unprotected)</h1>
+        <h1 className="flex text-3xl gap-5 p-4 items-center m-2">Landing page(Unprotected)</h1>
       </div>
       <div>
         <Link href="/sign-in">
-          <Button>
+          <Button className="bg-red-900">
             Login
           </Button>
         </Link>
         <Link href="/sign-up">
-          <Button>
+          <Button className="bg-green-700">
             Register
           </Button>
         </Link>
