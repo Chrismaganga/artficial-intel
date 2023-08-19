@@ -48,8 +48,7 @@ const PhotoPage = () => {
       setPhotos(urls);
     } catch (error: any) {
       if (error?.response?.status === 403) {
-        proModal.onOpen();
-      } else {
+        //Open proModal
         toast.error("Something went wrong.");
       }
     } finally {
